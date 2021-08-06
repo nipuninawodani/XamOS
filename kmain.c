@@ -1,15 +1,14 @@
- #include "frame_buffer.h"
-<<<<<<< HEAD
-    #include "serial_port.h"
-=======
->>>>>>> 3d87552ffb5f99da94bffff3aacd5b4d61ed89b3
+#include "frame_buffer.h"
+#include "serial_port.h"
 
 
     
     int main(){
 
-           char ptr2[] = "Welcome to CarbonOS";
+           char ptr2[] = "Welcome to XamOS";
    
     
-    fb_write( ptr2, 19);
+    serial_write(0x3F8, ptr2, 19);
+    fb_write(ptr2, 19);
+    
     }
