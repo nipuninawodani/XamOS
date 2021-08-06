@@ -35,6 +35,7 @@
 00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
 00000000000i[      ]   VGA extension support: vbe cirrus voodoo
 <<<<<<< HEAD
+<<<<<<< HEAD
 00000000000i[MEM0  ] allocated memory at 0x7f3c81ddd010. after alignment, vector=0x7f3c81dde000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
@@ -76,6 +77,8 @@
 00000000000i[      ] lt_dlhandle is 0x55f5e77054a0
 =======
 000000000000i[MEM0  ] allocated memory at 0x7ffb3d5dc010. after alignment, vector=0x7ffb3d5dd000
+=======
+000000000000i[MEM0  ] allocated memory at 0x7ffb3d5dc010. after alignment, vector=0x7ffb3d5dd000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
@@ -113,6 +116,47 @@
 00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
 00000000000i[      ] lt_dlhandle is 0x55ed9df952d0
 00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
+00000000000i[      ] lt_dlhandle is 0x55ed9df97530
+00000000000i[MEM0  ] allocated memory at 0x7f7ec15dc010. after alignment, vector=0x7f7ec15dd000
+>>>>>>> c3dfa13cc1665cffdb21d97060b3e63bf58d796b
+00000000000i[MEM0  ] 32.00MB
+00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
+00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
+00000000000i[      ] lt_dlhandle is 0x55a7f0c1e5e0
+00000000000i[PLUGIN] loaded plugin libbx_hdimage.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0b84370
+00000000000i[PLUGIN] loaded plugin libbx_soundalsa.so
+00000000000i[WAVOUT] ALSA: opened default PCM output device
+00000000000i[WAVOUT] changed sample rate to 44101
+00000000000i[      ] lt_dlhandle is 0x55a7f12415b0
+00000000000i[PLUGIN] loaded plugin libbx_pci.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0a95360
+00000000000i[PLUGIN] loaded plugin libbx_pci2isa.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0a95300
+00000000000i[PLUGIN] loaded plugin libbx_usb_uhci.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0ac6260
+00000000000i[PLUGIN] loaded plugin libbx_acpi.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0ac6f80
+00000000000i[PLUGIN] loaded plugin libbx_hpet.so
+00000000000i[      ] lt_dlhandle is 0x55a7f0ce2640
+00000000000i[PLUGIN] loaded plugin libbx_cmos.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1251e70
+00000000000i[PLUGIN] loaded plugin libbx_dma.so
+00000000000i[      ] lt_dlhandle is 0x55a7f12528c0
+00000000000i[PLUGIN] loaded plugin libbx_pic.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1253080
+00000000000i[PLUGIN] loaded plugin libbx_pit.so
+00000000000i[      ] lt_dlhandle is 0x55a7f12538c0
+00000000000i[PLUGIN] loaded plugin libbx_vga.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1274e70
+00000000000i[PLUGIN] loaded plugin libbx_floppy.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1275690
+00000000000i[PLUGIN] loaded plugin libbx_ioapic.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1275e90
+00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
+00000000000i[      ] lt_dlhandle is 0x55a7f1276660
+00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
+<<<<<<< HEAD
 00000000000i[      ] lt_dlhandle is 0x55ed9df97530
 00000000000i[MEM0  ] allocated memory at 0x7f7ec15dc010. after alignment, vector=0x7f7ec15dd000
 00000000000i[MEM0  ] 32.00MB
@@ -155,6 +199,10 @@
 00000000000i[      ] lt_dlhandle is 0x55a7f12788c0
 
 >>>>>>> origin
+=======
+00000000000i[      ] lt_dlhandle is 0x55a7f12788c0
+
+>>>>>>> c3dfa13cc1665cffdb21d97060b3e63bf58d796b
 00000000000i[PLUGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[DEV   ] i440FX PMC present at device 0, function 0
@@ -163,11 +211,16 @@
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
 <<<<<<< HEAD
+<<<<<<< HEAD
 00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 18:04:16 2021 (time0=1627994056)
 =======
 00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 17:56:40 2021 (time0=1627993600)
 00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 17:51:27 2021 (time0=1627993287)
 >>>>>>> origin
+=======
+00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 17:56:40 2021 (time0=1627993600)
+00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 17:51:27 2021 (time0=1627993287)
+>>>>>>> c3dfa13cc1665cffdb21d97060b3e63bf58d796b
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -469,4 +522,7 @@
 00326153000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
 00326153000i[CMOS  ] Last time is 1627993613 (Tue Aug  3 17:56:53 2021)
 00326153000i[SIM   ] quit_sim called with exit code 1
+<<<<<<< HEAD
 >>>>>>> origin
+=======
+>>>>>>> c3dfa13cc1665cffdb21d97060b3e63bf58d796b
