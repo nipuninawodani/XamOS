@@ -21,6 +21,7 @@ KERNEL_STACK_SIZE equ 4096          ; size of stack in bytes    section .bss
         mov esp, kernel_stack + KERNEL_STACK_SIZE          ; point esp to the start of the
                                                            ; stack (end of memory area)
        ; The assembly code
+
          extern sum_of_three                               ; the function sum_of_three is defined elsewhere
 
         push dword 3                                       ; arg3
@@ -30,4 +31,15 @@ KERNEL_STACK_SIZE equ 4096          ; size of stack in bytes    section .bss
                                                      
     .loop:
         jmp .loop                                          ; loop forever
+
+        
+
+       extern main   		           ; the main function is defined elsewhere
+       extern sum_of_three   		   ; the main function is defined elsewhere
+
+       call main                             ; call the function, the result will be in eax
+       
+    .loop:
+        
+
         
