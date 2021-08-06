@@ -22,7 +22,10 @@ KERNEL_STACK_SIZE equ 4096          ; size of stack in bytes    section .bss
                                                            ; stack (end of memory area)
        ; The assembly code
         
+
        extern main   		           ; the main function is defined elsewhere
+       extern sum_of_three   		   ; the main function is defined elsewhere
+
        call main                             ; call the function, the result will be in eax
        
     .loop:
