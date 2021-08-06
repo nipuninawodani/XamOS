@@ -34,6 +34,7 @@
 00000000000i[      ]   Sound support: SB16 ES1370
 00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
 00000000000i[      ]   VGA extension support: vbe cirrus voodoo
+<<<<<<< HEAD
 00000000000i[MEM0  ] allocated memory at 0x7fe57889b010. after alignment, vector=0x7fe57889c000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
@@ -73,6 +74,47 @@
 00000000000i[      ] lt_dlhandle is 0x563669d05660
 00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
 00000000000i[      ] lt_dlhandle is 0x563669d078c0
+=======
+00000000000i[MEM0  ] allocated memory at 0x7f5425ddd010. after alignment, vector=0x7f5425dde000
+00000000000i[MEM0  ] 32.00MB
+00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
+00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
+00000000000i[      ] lt_dlhandle is 0x55f095cf21c0
+00000000000i[PLUGIN] loaded plugin libbx_hdimage.so
+00000000000i[      ] lt_dlhandle is 0x55f095aee280
+00000000000i[PLUGIN] loaded plugin libbx_soundalsa.so
+00000000000i[WAVOUT] ALSA: opened default PCM output device
+00000000000i[WAVOUT] changed sample rate to 44101
+00000000000i[      ] lt_dlhandle is 0x55f0961f7260
+00000000000i[PLUGIN] loaded plugin libbx_pci.so
+00000000000i[      ] lt_dlhandle is 0x55f095a4b370
+00000000000i[PLUGIN] loaded plugin libbx_pci2isa.so
+00000000000i[      ] lt_dlhandle is 0x55f095a4b310
+00000000000i[PLUGIN] loaded plugin libbx_usb_uhci.so
+00000000000i[      ] lt_dlhandle is 0x55f095a7bef0
+00000000000i[PLUGIN] loaded plugin libbx_acpi.so
+00000000000i[      ] lt_dlhandle is 0x55f095a7cc10
+00000000000i[PLUGIN] loaded plugin libbx_hpet.so
+00000000000i[      ] lt_dlhandle is 0x55f095c982f0
+00000000000i[PLUGIN] loaded plugin libbx_cmos.so
+00000000000i[      ] lt_dlhandle is 0x55f096207b20
+00000000000i[PLUGIN] loaded plugin libbx_dma.so
+00000000000i[      ] lt_dlhandle is 0x55f096208570
+00000000000i[PLUGIN] loaded plugin libbx_pic.so
+00000000000i[      ] lt_dlhandle is 0x55f096208d30
+00000000000i[PLUGIN] loaded plugin libbx_pit.so
+00000000000i[      ] lt_dlhandle is 0x55f096209570
+00000000000i[PLUGIN] loaded plugin libbx_vga.so
+00000000000i[      ] lt_dlhandle is 0x55f09622ab20
+00000000000i[PLUGIN] loaded plugin libbx_floppy.so
+00000000000i[      ] lt_dlhandle is 0x55f09622b340
+00000000000i[PLUGIN] loaded plugin libbx_ioapic.so
+00000000000i[      ] lt_dlhandle is 0x55f09622bb40
+00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
+00000000000i[      ] lt_dlhandle is 0x55f09622c310
+00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
+00000000000i[      ] lt_dlhandle is 0x55f09622e570
+>>>>>>> ebc526c5baf66a06f408ae57318400e413016bb2
 00000000000i[PLUGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[DEV   ] i440FX PMC present at device 0, function 0
@@ -80,7 +122,11 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
+<<<<<<< HEAD
 00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 19:22:48 2021 (time0=1627998768)
+=======
+00000000000i[CMOS  ] Setting initial clock to: Tue Aug  3 19:19:49 2021 (time0=1627998589)
+>>>>>>> ebc526c5baf66a06f408ae57318400e413016bb2
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -230,6 +276,7 @@
 00000319637i[BIOS  ] ram_size=0x02000000
 00000320080i[BIOS  ] ram_end=32MB
 <<<<<<< HEAD
+<<<<<<< HEAD
 00000332202i[BIOS  ] Found 1 cpu(s)
 00000345890i[BIOS  ] bios_table_addr: 0x000f9db8 end=0x000fcc00
 00000804808i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
@@ -295,6 +342,8 @@
 00285086000i[CMOS  ] Last time is 1627999053 (Tue Aug  3 19:27:33 2021)
 00285086000i[SIM   ] quit_sim called with exit code 1
 =======
+=======
+>>>>>>> ebc526c5baf66a06f408ae57318400e413016bb2
 00000332229i[BIOS  ] Found 1 cpu(s)
 00000345917i[BIOS  ] bios_table_addr: 0x000f9db8 end=0x000fcc00
 00000804835i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
@@ -359,4 +408,7 @@
 00735547000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
 00735547000i[CMOS  ] Last time is 1627999324 (Tue Aug  3 19:32:04 2021)
 00735547000i[SIM   ] quit_sim called with exit code 1
+<<<<<<< HEAD
 >>>>>>> 2121c0227fc3d4a8e9815d23ceb594ae5f784cbb
+=======
+>>>>>>> ebc526c5baf66a06f408ae57318400e413016bb2
