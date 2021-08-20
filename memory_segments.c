@@ -58,3 +58,4 @@ void segments_install_gdt()
 	segments_load_gdt(*gdt_ptr);
 	segments_load_registers();
 }
+

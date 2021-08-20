@@ -25,3 +25,4 @@ void segments_load_gdt(struct GDT gdt);
 void segments_load_registers();
 
 #endif /* INCLUDE_MEMORY_SEGMENTS */
+

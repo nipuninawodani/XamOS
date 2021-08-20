@@ -1,16 +1,24 @@
-#include "drivers/frame_buffer.h"
-#include "drivers/serial_port.h"
-#include "segmentation/memory_segments.h"
+#include "io.h"
+#include "serial.h"
+#include "framebuffer.h"
+#include "keyboard.h"
+#include "memory_segments.h"
+#include "interrupts.h"
 
 
-    
-    int main(){
+char message[]= "XamOS";
 
-           char ptr2[] = "Welcome to CarbonOS";
-   
-    
-    serial_write(0x3F8, ptr2, 19);
-    fb_write(ptr2, 19);
-    segments_install_gdt();
-    
-    }
+int kmain()
+{
+
+	/*fb_clear();*/
+	fb_move_cursor(6*80);
+	fb_write_str(message,sizeof(message));
+	/*fb_write_str("hello\n",5); TODO */
+	serial_write(message,sizeof(message));
+	segments_install_gdt();
+	interrupts_install_idt();
+	
+
+	return 0;
+}
