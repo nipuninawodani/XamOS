@@ -1,4 +1,4 @@
-OBJECTS = loader.o kmain.o common.o framebuffer.o io.o serial.o keyboard.o gdt.o memory_segments.o idt.o interrupt_handlers.o interrupts.o pic.o
+OBJECTS = loader.o kmain.o common.o framebuffer.o io.o serial.o keyboard.o gdt.o memory_segments.o idt.o interrupt_handlers.o interrupts.o pic.o 
 CC = gcc
 CFLAGS = -m32 -nostdlib -fno-builtin -fno-stack-protector \
          -Wno-unused -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c -masm=intel 
@@ -25,10 +25,10 @@ os.iso: kernel.elf
             iso
 
 
-#run: os.iso
-#	bochs -f bochsrc.txt -q
 run: os.iso
 	bochs -f bochsrc.txt -q
+
+
 %.o: %.c
 	$(CC) $(CFLAGS)  $< -o $@
 

@@ -5,6 +5,7 @@
 #include "serial.h"
 #include "keyboard.h"
 
+
 #define INTERRUPTS_DESCRIPTOR_COUNT 256 
 #define INTERRUPTS_KEYBOARD 33 
 #define INTERRUPTS_PAGING 14 
@@ -49,7 +50,7 @@ void interrupts_install_idt()
 }
 
 
-/* Interrupt handlers ********************************************************/
+//Interrupt handlers
 
 void interrupt_handler(__attribute__((unused)) struct cpu_state cpu, unsigned int interrupt, __attribute__((unused)) struct stack_state stack)
 {
@@ -74,7 +75,6 @@ void interrupt_handler(__attribute__((unused)) struct cpu_state cpu, unsigned in
 
 			break;
 		
-	
 		default:
 			break;
     }
